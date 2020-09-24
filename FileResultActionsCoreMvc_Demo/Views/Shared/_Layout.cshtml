@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" default-src 'self' ;style-src 'self' cdn.syncfusion.com fonts.googleapis.com 'unsafe-inline' ;font-src 'self' data: cdn.syncfusion.com fonts.googleapis.com fonts.gstatic.com ;frame-src www.google.com;img-src 'self' data: https:;object-src 'none' ; script-src 'self' cdn.polyfill.io www.gstatic.com www.google.com ajax.googleapis.com fonts.googleapis.com;frame-ancestors 'none' ;>
+    <title>@ViewData["Title"] - FileResultActionsCoreMvc_Demo</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3 py-3">
+            @RenderBody()
+        </main>
+    </div>
+    <ejs-scripts></ejs-scripts>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.489/pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.489/pdf.worker.js"></script>
+    <script src="~/js/easyPDF.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
